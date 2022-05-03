@@ -1,3 +1,5 @@
+## 참조 블로그
+(코딩하는 혁시)[https://coding-hyeok.tistory.com/21?category=842997]{_target="_blank"}
 ## React and Mysql Connection Project
 - node.js
     v16.15.0
