@@ -17,6 +17,11 @@ app.get('/', (req,res) => {
 app.post('/idplz', (req,res) => {
     const serverid = req.body.plzid;
     console.log(serverid);
+
+    const sendText = {
+        text: '언제나 삽질중',
+    };
+    res.send(sendText);
 })
 
 app.listen(port, ()=>{

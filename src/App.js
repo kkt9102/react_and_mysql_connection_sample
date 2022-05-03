@@ -26,7 +26,14 @@ export default class App extends Component {
       },
       body: JSON.stringify(post),
       // 전달할 내용, 통신할 때난 객체로 통신하기에 객체 타입으로 작성한다.
-    });
+    })
+    .then((res) => res.json())
+    .then((json) => {
+      this.setState({
+        id: json.text,
+      })
+      // res로 받은 것울 json으로 변환하고 json.text을 this.state.id에 저장한ㄷ.
+    })
   };
 
   render() {
